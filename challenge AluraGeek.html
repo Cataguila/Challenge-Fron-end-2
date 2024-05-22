@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AluraGeek</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Press+Start+2P&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header>
+        <img src="./assets/Logo.svg" alt="Logo AluraGeek" />
+        <div class="color-buttons">
+            <!-- Botones para cambiar el color del header -->
+            <!--<button data-color="#5d04d9" style="background-color: #5d04d9; border: 2px solid black;"></button>
+            <button data-color="#F72585" style="background-color: #F72585; border: 2px solid black;"></button>
+            <button data-color="#B5179E" style="background-color: #B5179E; border: 2px solid black;"></button>
+            <button data-color="#ada7c9" style="background-color: #ada7c9; border: 2px solid black;"></button>
+            <button data-color="#560BAD"></button>
+            <button data-color="#480CA8"></button> -->
+        </div>
+    </header>
+    <main>
+        <section id="formulario" class="formulario">
+            <h1>Agregar producto:</h1>
+            <form action="">
+                <div id="errorMessages"></div> 
+                <input type="text" placeholder="Nombre..." id="name"/>
+                <input type="text" placeholder="Precio..." id="price"/>
+                <input type="file" id="file"/>
+            </form>
+            <div class="container__buttons">
+                <button>Enviar</button>
+                <button>Limpiar</button>
+            </div>
+        </section>
+        <section id="productos" class="productos">
+            <h1>Mis productos:</h1>
+            <p id="noProductsMessage">No hay productos</p>
+        </section>
+    </main>
+    <footer>
+        <img src="./assets/Logo.svg" alt="logo-alura" />
+        <div class="container__footer--text">
+            <p>Challenge Alura Latam 2024</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

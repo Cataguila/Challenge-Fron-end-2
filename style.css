@@ -1,0 +1,213 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+header {
+    background: #5d04d9;
+    width: 100vw;
+    height: 96px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 7px 0px 0px rgba(150,133,133,0.75);
+    position: fixed;
+    top: 0;
+    left: 0;
+    text-align: center;
+    z-index: 10;
+}
+
+.color-buttons {
+    display: flex;
+    gap: 10px;
+    position: absolute;
+    right: 6vw;
+    top: 5vh;
+}
+
+.color-buttons button {
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 400;
+    font-size: 14px;
+    border-radius: 15px;
+    width: 2rem;
+    height: 2rem;
+}
+
+.color-buttons button:hover {
+    opacity: 0.8;
+}
+
+body {
+    padding-top: 96px; /* Para evitar que el contenido quede detrás del header */
+}
+
+header {
+    background: #5d04d9;
+    width: 100vw;
+    height: 96px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 7px 0px 0px rgba(150,133,133,0.75);
+    position: fixed;
+    top: 0;
+    left: 0;
+    text-align: center;
+    z-index: 10; /* Para asegurarse de que el header esté por encima del contenido */
+}
+
+h1 {
+    text-transform: uppercase;
+    width: 40%;
+    text-align: end;
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+}
+
+.productos h1 {
+    width: 100%;
+    text-align: center;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 16vh 0vw;
+}
+
+input {
+    border-radius: 2rem;
+    border: solid #03318c;
+    padding: 1rem;
+    color: #03318c;
+    width: 59vw;
+    max-width: 470px;
+}
+
+#noProductsMessage {
+    font-family: "Press Start 2P", system-ui;
+    font-size: 1.2rem;
+    margin-top: 3rem;
+    color: gray;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 472px;
+    margin: 1rem 0;
+}
+
+.container__buttons {
+    display: flex;
+    gap: 2rem;
+}
+
+button {
+    border-radius: 0.8rem;
+    border: solid #03318c;
+    padding: 0.8rem;
+    color: white;
+    background: #03318c;
+    width: 25vw;
+    cursor: pointer;
+}
+
+button:nth-child(2) {
+    color: #03318c;
+    background: white;
+}
+
+.productos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100vw;
+    margin-bottom: 16vh;
+}
+
+.card {
+    border: 3px solid black;
+    width: 40vw;
+    background: #5d04d9;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1rem;
+    margin: 1rem 0.5rem;
+    gap: 0.5rem;
+    padding: 0.5rem 0;
+}
+
+.product-image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 0.5rem;
+}
+
+.delete-btn {
+    width: 1rem;
+    height: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+i {
+    font-weight: bold;
+}
+
+.card-container--value {
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 1rem;
+}
+
+footer {
+    background: #5d04d9;
+    width: 100%;
+    height: 118px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    body {
+        display: flex;
+    }
+    h1 {
+        text-align: center;
+    }
+    .formulario {
+        width: 35%;
+        float: inline-end;
+    }
+    .container__buttons {
+        width: 55%;
+    }
+    .productos {
+        width: 60%;
+    }
+    .card {
+        width: 30%;
+    }
+}
